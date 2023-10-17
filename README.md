@@ -106,3 +106,7 @@ Using a `requirements.txt` file greatly facilitates reproducibility by:
 (venv)> pip install -r requirements.txt
 ```
 
+PIP also includes some useful commands to iteratively define requirements. For example, calling `pip freeze` within a virtual environment lists all of packages installed in the environment as well as their versions. Modifying this, one can write the required packages to a file using:
+```bash
+(venv)> pip freeze > requirements.txt
+```

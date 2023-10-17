@@ -110,3 +110,39 @@ PIP also includes some useful commands to iteratively define requirements. For e
 ```bash
 (venv)> pip freeze > requirements.txt
 ```
+
+# How Python Runs
+
+Python is *both* a compiler and an interpreter. Python code is comipled to bytecode and then interpreted by a virtual machine before running with the operating system.
+
+The basic processing steps are as follows:
+1. Python code is executed
+2. Python compiler performs checks on code (e.g. for syntax errors)
+3. Python compiler compiles checked code to bytecode
+4. Virtual machine interprets bytecode for operating system (OS-specific)
+5. Operating system executes interpreted bytecode
+6. Operating system returns results to virtual machine
+
+Python code can be run in two different ways, much like R: in **interactive mode** (REPL) and in **script mode** (batch).
+
+## Interactive Mode
+
+To run Python interactively, type `python` in the command line (from within a virtual environment). This opens a basic read-evaluate-print loop (REPL).
+
+```bash
+python # open python REPL
+>>> # type python code here
+```
+
+This interface is not very useful on its own, in part because everything is ephemeral - hence the creation of Jupyter notebook and other frameworks.
+
+## Script Mode
+
+To run Python scripts, the code should be saved in (at least) one `.py` file and run using:
+
+```bash
+python <app_name>.py
+```
+
+This approach is much more organized than notebooks and one-off script files because it allows for more sophisticated structures, automated testing, and design patterns.
+

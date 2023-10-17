@@ -146,3 +146,24 @@ python <app_name>.py
 
 This approach is much more organized than notebooks and one-off script files because it allows for more sophisticated structures, automated testing, and design patterns.
 
+# Jupyter Notebooks
+
+[Jupyter notebooks](https://docs.jupyter.org/en/latest/) are one of the most popular ways to experiment with Python and develop initial versions of analysis scripts. One of the main advantages of Jupyter notebooks is that they allow for documentation and REPL-style code to exist (and run!) within a single document.
+
+To use Jupyter notebooks, one must first have the `notebook` Python package installed in the relevant virtual environment.
+
+```bash
+<env-name>/Scripts/activate 	# activate virtual environment
+(env-name)> pip install notebook
+```
+
+Once installed, Jupyter can be run in the working directory(`.`) using:
+
+```bash
+(env-name)> jupyter notebook . 	# opens browser window
+```
+
+This command opens a Web browser window after activating a local server to run the notebook files. Within the browser window, you can create new notebook files, browse existing files, run notebooks, and much more.
+
+For most purposes, **the primary value in using Jupyter notebooks is to streamline interactive, exploratory data analysis** which can then be both documented (using Markdown syntax), versioned, and exported (in a variety of formats, including static Markdown files). This is obviously very similar to R markdown, though with several tooling limitations.
+
